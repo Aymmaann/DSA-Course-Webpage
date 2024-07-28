@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>DSA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                lightGray: '#eeeeee',
+                grayish: '#dddddd',
+                gray: '#a6a8be',
+                grayText: '#939393',
+                veryDarkGray: '#333333',
+                green: '#5cb377',
+                blue: '#505680',
+                paleBlue: '#f6f8fc',
+                pink: '#ff91e7',
+                pinkRing: '#f68293',
+                purpleText: '#4c527d',
+                orange: '#ee6523',
+                darkerOrange: '#e55713'
+              },
+              width: {
+                mainimg: '526px',
+                newReleaseWidth: '120px',
+                abc: '368px',
+                checkmark: '19px',
+                reviews: '49%',
+                pfp: '60px'
+              },
+              height :{
+                newReleaseHeight: '120px',
+              },
+              fontFamily: {
+                ubuntu: "'Ubuntu', sans-serif"
+              },
+              boxShadow: {
+                'custom': '0px 3px 8px rgba(0, 0, 0, 0.24)',
+              },
+            }
+          }
+        }
+    </script>
+    <style>
+        .transition-element {
+            transition: 0.2s ease-in-out;
+        }
+        .border-left {
+            border-left: 4px solid #f5a782;
+        }
+        .active {
+            color: #4c527d;
+        }
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.4s ease-out;
+        }
+        .fade-in {
+            opacity: 1;
+            transition: opacity 0.4s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <main class="mb-28">
+        <nav class="px-3 py-4 flex gap-2 items-center font-semibold text-2xl">
+            <img src="./images/site-logo.svg" alt="">
+            <h1>DSA Revision</h1>
+        </nav>
+
+        <section class="flex px-20 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl font-ubuntu font-medium leading-normal">Best way to revise for your next coding interview</h1>
+                <p class="text-blue text-lg mt-2">Get everything in a single guide: Data structures, algorithms, patterns, visualizers, questions, examples, solutions, explanations, and much more!</p>
+
+                <div class="text-center bg-grayish rounded-md mt-6 hover:bg-pink hover:ring-2 ring-pinkRing transition-element">
+                    <a href="#" class="flex items-center justify-center gap-2">
+                        <p class="font-bold">Buy FREE through</p>
+                        <img src="./images/gumroad-logo.png" alt="" class="w-28">
+                    </a>
+                </div>
+
+                <div class="bg-paleBlue py-6 px-7 border-left mt-12">
+                    <q class="italic text-blue feature">Excellent revision tool, specially when you have an interview coming up in 15 days or so. It's so hard to find everything in one place.</q>
+                </div>
+
+                <div class="flex justify-center items-center gap-3 mt-14">
+                    <i class="fa-solid fa-circle text-xs option active" id="first"></i>
+                    <i class="fa-solid fa-circle text-xs text-gray option" id="second"></i>
+                    <i class="fa-solid fa-circle text-xs text-gray option" id="third"></i>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./images/dsa-main.png" alt="">
+                <div class="absolute rounded-full bg-green text-white font-medium font-ubuntu flex items-center justify-center w-newReleaseWidth h-newReleaseHeight text-center text-xl -top-10 right-0 shadow-custom">
+                    New<br>Release
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-24">
+            <h1 class="font-ubuntu text-4xl font-medium text-center">What's Included</h1>
+
+            <div class="flex items-start justify-center mt-12 gap-10">
+                <img src="./images/dsa-2.png" alt="" class="w-abc">
+
+                <div class="text-blue">
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> 15+ algo patterns discussed</p>
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> Detailed solutions and explanations</p>
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> Awesome resources, articles, blogs</p>
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> Visualizers and animations included</p>
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> 100 pages of quality content</p>
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> Concepts explained for beginners</p>
+                    <p class="flex items-center gap-3 text-lg mb-4"><img src="./images/checkmark.webp" alt="" class="w-checkmark"> All in one revision guide</p>
+
+                    <div class="flex justify-center mt-10">
+                        <button class="text-white bg-orange py-3 px-7 rounded-3xl hover:bg-darkerOrange transition-element">Download for free</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-wrap mt-20 px-28 gap-5">
+            <div class="ring-1 ring-lightGray w-reviews rounded-lg px-7 py-12">
+                <q class="text-grayText">This DSA course provided a <span class="text-veryDarkGray">a clear and practical approach</span> to data structures. The hands-on projects and real-world examples made complex concepts more accessible, significantly enhancing my analytical skills and confidence in using data effectively.</q>
+                <div class="mt-6 flex items-center gap-5">
+                    <img src="./images/profiles/profile-1.png" alt="" class="w-pfp">
+                    <div>
+                        <p class="text-purpleText">Ryan Davis</p>
+                        <p class="text-grayText">Software Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ring-1 ring-lightGray w-reviews rounded-lg px-7 py-12">
+                <q class="text-grayText">This DSA course <span class="text-veryDarkGray">provided an in-depth look at data structures</span> with practical, hands-on assignments. The clear explanations and challenging exercises greatly enhanced my understanding and ability to apply these concepts effectively.</q>
+                <div class="mt-6 flex items-center gap-5">
+                    <img src="./images/profiles/profile-2.png" alt="" class="w-pfp">
+                    <div>
+                        <p class="text-purpleText">Laura Bennett</p>
+                        <p class="text-grayText">Systems Analyst</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ring-1 ring-lightGray w-reviews rounded-lg px-7 py-12">
+                <q class="text-grayText">This DSA course was incredibly insightful, offering a solid foundation in data structures through practical exercises and clear instruction. It helped me build <span class="text-veryDarkGray">essential skills for tackling complex problems</span> and applying concepts in real-world scenarios.</q>
+                <div class="mt-6 flex items-center gap-5">
+                    <img src="./images/profiles/profile-3.png" alt="" class="w-pfp">
+                    <div>
+                        <p class="text-purpleText">Jordan Mitchell</p>
+                        <p class="text-grayText">Backend Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ring-1 ring-lightGray w-reviews rounded-lg px-7 py-12">
+                <q class="text-grayText">This DSA course offered a clear and practical understanding of data structures. The <span class="text-veryDarkGray">well-structured lessons and hands-on exercises</span> made it easy to master the concepts and apply them effectively in real-world situations.</q>
+                <div class="mt-6 flex items-center gap-5">
+                    <img src="./images/profiles/profile-5.png" alt="" class="w-pfp">
+                    <div>
+                        <p class="text-purpleText">Ethan Kim</p>
+                        <p class="text-grayText">Junior Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/189bc17b67.js" crossorigin="anonymous"></script>
+</body>
+</html>
