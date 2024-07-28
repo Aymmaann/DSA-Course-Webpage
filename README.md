@@ -36,9 +36,3 @@ You can view the live site [here](https://dsa-course.netlify.app).
 - **HTML/CSS:** For the basic structure and styling of the website.
 - **Tailwind CSS:** Used for responsive and modern design.
 - **JavaScript:** For interactive features and dynamic content.
-## Acknowledgements
-
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
-
